@@ -9,6 +9,9 @@
 # 
 # Set correct ids to env variables and run from a terminal:
 # KID_ID=11111 SINCE=2017-05-12T00:00:00.000Z # TOKEN=aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa ./photovideo_downloader.sh
+#
+# To download 1seconds use this base_url
+# 'https://babyalbum.com/api/kids/$KID_ID/daily_snapshots?locale=ru&token=$TOKEN'
 
 curl "https://babyalbum.com/api/kids/$KID_ID/events?locale=ru&since=$SINCE&token=$TOKEN" \
      -H 'Accept-Encoding: gzip, deflate, sdch, br' \
